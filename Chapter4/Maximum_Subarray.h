@@ -1,0 +1,8 @@
+//
+// Created by shinoship on 2025/9/27.
+//
+
+#ifndef ALGORITHMS_MAXIMUM_SUBARRAY_H
+#define ALGORITHMS_MAXIMUM_SUBARRAY_H
+
+#endif //ALGORITHMS_MAXIMUM_SUBARRAY_H
