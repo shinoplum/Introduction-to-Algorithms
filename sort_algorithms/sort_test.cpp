@@ -2,9 +2,9 @@
 // Created by shinoship on 2025/9/26.
 //
 #include"Example.h"
-#include "InsertionSort.h"
+#include "InsertSort.h"
 #include "MergeSort.h"
-#include "SelectionSort.h"
+#include "SelectSort.h"
 #include "ShellSort.h"
 #include "MergeSort.h"
 
