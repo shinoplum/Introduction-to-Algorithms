@@ -4,7 +4,7 @@
 
 #ifndef ALGORITHMS_HEAPSORT_H
 #define ALGORITHMS_HEAPSORT_H
-#include "MaxHeap.h"
+#include "../data_structure/MaxHeap.h"
 
 void heapSort(vector<int> &A) {
     MaxHeap::buildMaxHeap(A);
