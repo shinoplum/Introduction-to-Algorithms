@@ -5,6 +5,7 @@
 #include<vector>
 #include<iostream>
 #include"MaxHeap.h"
+#include"HeapSort.h"
 using namespace std;
 
 int main() {
@@ -17,7 +18,7 @@ int main() {
     cout << endl;
 
     // 假设我们要修复以索引 1 为根的子树
-    MaxHeap::maxHeapify_rec(A,1);
+    MaxHeap::maxHeapify_rec(A,heap_size,1);
 
     cout << "After MAX-HEAPIFY:\n";
     for (int x : A) cout << x << " ";
@@ -35,6 +36,18 @@ int main() {
 
     cout << "After buildMaxHeap: ";
     for (int x : B) cout << x << " ";
+    cout << endl;
+
+    //HeapSort_test
+    vector<int> C = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
+    cout << "Original array: ";
+    for (int x : C) cout << x << " ";
+    cout << endl;
+
+    heapSort(C);
+
+    cout << "After buildMaxHeap: ";
+    for (int x : C) cout << x << " ";
     cout << endl;
 
 

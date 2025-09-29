@@ -7,7 +7,7 @@
 #ifndef ALGORITHMS_INSERTIONSORT_H
 #define ALGORITHMS_INSERTIONSORT_H
 #include "Example.h"
-void insertion_sort(vector<int>& arr) {
+void insert_sort(vector<int>& arr) {
     int n = arr.size();
     for (int i = 1; i < n; i++) {
         for (int j = i;j>0 && arr[j] < arr[j - 1]; j--) {

@@ -12,11 +12,10 @@ class MaxHeap {
     public:
     //MAX-HEAPIFY:维护最大堆性质
     //递归实现
-    static void maxHeapify_rec(vector<int> &A, int i) {
+    static void maxHeapify_rec(vector<int> &A, int heap_size, int i) {
         int lchild = 2 * i + 1; //左孩子
         int rchild = 2 * i + 2;//右孩子
         int largest = i;//假设当前节点是最大值
-        int heap_size = A.size();
 
         //比较左孩子
         if (lchild < heap_size && A[lchild] > A[i]) {
@@ -31,7 +30,7 @@ class MaxHeap {
         //如果当前不是最大节点则下沉
         if (largest != i) {
             swap(A[i], A[largest]);
-            maxHeapify_rec(A, largest);
+            maxHeapify_rec(A, heap_size, largest);
         }
     }
 
@@ -57,9 +56,9 @@ class MaxHeap {
 
     //BUILD-MAX_HEAP:构建最大堆
     static void buildMaxHeap(vector<int> &A) {
-        int heap_size = A.size();
-        for (int i = heap_size / 2 - 1; i >= 0; i--) {//子数组A([n/2] + 1...n)都是树的叶结点
-            maxHeapify_rec(A, i);
+        int n = A.size();
+        for (int i = n / 2 - 1; i >= 0; i--) {//子数组A([n/2] + 1...n)都是树的叶结点
+            maxHeapify_rec(A, n, i);
         }
     }
 };
