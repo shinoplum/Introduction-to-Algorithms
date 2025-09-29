@@ -11,10 +11,10 @@
 
 int main() {
     vector<int>arr = {4,2,3,5,6,1,7,8,9};
-    //selection_sort(arr);
-    //insertion_sort(arr);
-    // shell_sort(arr);
-    // merge_sort(arr,0,8);
-    quick_sort(arr, 0, arr.size() - 1);
+    selectSort(arr);
+    insertSort(arr);
+     shellSort(arr);
+     mergeSort(arr,0,8);
+    quickSort(arr, 0, arr.size() - 1);
     show2(arr);
 }

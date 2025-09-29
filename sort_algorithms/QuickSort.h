@@ -20,11 +20,11 @@ int Partition(vector<int> &A, int left, int right) {//left == p  right = r
     return (i + 1);
 };
 
-void quick_sort(vector<int> &A, int left, int right) {
+void quickSort(vector<int> &A, int left, int right) {
     if (left < right) {
         int q = Partition(A, left, right);
-        quick_sort(A, left, q - 1);
-        quick_sort(A, q + 1, right);
+        quickSort(A, left, q - 1);
+        quickSort(A, q + 1, right);
     }
 }
 
@@ -76,14 +76,14 @@ pair<int, int> partition3Way(vector<int>& A, int left, int right) {
     return {lt, gt};
 }
 
-void quick_sort_3way(vector<int>& A, int left, int right) {
+void quickSort3Way(vector<int>& A, int left, int right) {
     if (left >= right) return;
 
     auto [lt, gt] = partition3Way(A, left, right);
 
     // 只需递归排序 < pivot 和 > pivot 的部分
-    quick_sort_3way(A, left, lt - 1);
-    quick_sort_3way(A, gt + 1, right);
+    quickSort3Way(A, left, lt - 1);
+    quickSort3Way(A, gt + 1, right);
 }
 
 #endif //ALGORITHMS_QUICKSORT_H

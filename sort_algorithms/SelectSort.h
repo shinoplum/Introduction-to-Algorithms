@@ -7,7 +7,7 @@
 #ifndef ALGORITHMS_SELECTIONSORT_H
 #define ALGORITHMS_SELECTIONSORT_H
 #include "Example.h"
-void selection_sort(vector<int> &arr) {
+void selectSort(vector<int> &arr) {
     int n = arr.size();
     for (int i = 0; i < n ; i++) {
         int min = i;

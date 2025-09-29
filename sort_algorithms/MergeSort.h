@@ -76,11 +76,11 @@ void merge_v2(vector<int>&A,int low,int mid,int high) {
     }
 }
 
-void merge_sort(vector<int> &A,int low,int high) {
+void mergeSort(vector<int> &A,int low,int high) {
     if (low < high) {
         int mid = low + (high - low) / 2;//防止溢出
-        merge_sort(A, low, mid);
-        merge_sort(A, mid+1, high);
+        mergeSort(A, low, mid);
+        mergeSort(A, mid+1, high);
         merge_v2(A, low, mid, high);
     }
 }

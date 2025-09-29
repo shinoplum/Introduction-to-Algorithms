@@ -7,7 +7,7 @@
 #ifndef ALGORITHMS_SHELLSORT_H
 #define ALGORITHMS_SHELLSORT_H
 #include "Example.h"
-void shell_sort(vector<int> &arr) {
+void shellSort(vector<int> &arr) {
     int n = arr.size();
     int h = 1;
     while (h < n / 3) { h = 3 *h + 1; }
