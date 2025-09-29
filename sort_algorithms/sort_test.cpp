@@ -8,13 +8,15 @@
 #include "ShellSort.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
+#include "RadixSort.h"
 
 int main() {
     vector<int>arr = {4,2,3,5,6,1,7,8,9};
-    selectSort(arr);
-    insertSort(arr);
-     shellSort(arr);
-     mergeSort(arr,0,8);
-    quickSort(arr, 0, arr.size() - 1);
+    // selectSort(arr);
+    // insertSort(arr);
+    //  shellSort(arr);
+    //  mergeSort(arr,0,8);
+    // quickSort(arr, 0, arr.size() - 1);
+    radixSort(arr);
     show2(arr);
 }
