@@ -10,7 +10,7 @@
 BinaryTree* BST_Search(BinaryTree* root, int target) {
     while (root != nullptr && root->data != target) {
         if (target < root->data) {
-            root = root->lchild;
+            root = root->left;
         } else {
             root = root->rchild;
         }
@@ -27,7 +27,7 @@ BinaryTree* BST_Insert(BinaryTree* root, int target) {
         return root;  // 已存在，不插入，返回原树
     }
     else if (target < root->data) {
-        root->lchild = BST_Insert(root->lchild, target);  // 更新左子树
+        root->left = BST_Insert(root->left, target);  // 更新左子树
     }
     else {
         root->rchild = BST_Insert(root->rchild, target);  // 更新右子树

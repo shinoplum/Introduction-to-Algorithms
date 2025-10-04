@@ -18,7 +18,7 @@ int main() {
     // insertSort(arr);
     //  shellSort(arr);
     //  mergeSort(arr,0,8);
-    // quickSort(arr, 0, arr.size() - 1);
+    quickSort(arr, 0, arr.size() - 1);
     //radixSort(arr);
     // bucketSort(arr2);
     // for (auto x : arr2 ) {
