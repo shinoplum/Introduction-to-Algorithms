@@ -5,7 +5,7 @@
 #include<vector>
 #include<iostream>
 #include "MaxHeap.h"
-#include "../sort_algorithms/HeapSort.h"
+#include "../Sort_Algorithms/HeapSort.h"
 using namespace std;
 
 int main() {

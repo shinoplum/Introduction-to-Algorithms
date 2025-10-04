@@ -149,7 +149,7 @@ private:
         newNode->right = nullptr;
         newNode->color = RED;
 
-        RB_Insert_Fixup();
+        RB_Insert_Fixup(newNode);
     }
 
 public:
